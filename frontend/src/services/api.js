@@ -19,3 +19,7 @@ export const evaluateFeedback = async (data) => {
   const response = await axios.post(`${API_BASE_URL}/interview/evaluate`, data);
   return response.data;
 };
+
+const API_BASE_URL = "https://ai-powered-interactive-interview.onrender.com";
+
+export default API_BASE_URL;
